@@ -1,0 +1,30 @@
+{
+  "collection": "@nestjs/schematics",
+  "sourceRoot": "apps/nest-typescript-starter/src",
+  "monorepo": true,
+  "root": "apps/nest-typescript-starter",
+  "compilerOptions": {
+    "webpack": true,
+    "tsConfigPath": "apps/nest-typescript-starter/tsconfig.app.json"
+  },
+  "projects": {
+    "nest-typescript-starter": {
+      "type": "application",
+      "root": "apps/nest-typescript-starter",
+      "entryFile": "main",
+      "sourceRoot": "apps/nest-typescript-starter/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/nest-typescript-starter/tsconfig.app.json"
+      }
+    },
+    "book-directory": {
+      "type": "application",
+      "root": "apps/book-directory",
+      "entryFile": "main",
+      "sourceRoot": "apps/book-directory/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/book-directory/tsconfig.app.json"
+      }
+    }
+  }
+}
